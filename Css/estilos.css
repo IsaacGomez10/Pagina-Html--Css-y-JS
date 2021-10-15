@@ -19,7 +19,22 @@ body {
   flex-direction: column;
   
 }
+.nav a:hover{
+  background: rgb(50, 125, 205);
+}
 
+#n:hover{
+  color: rgb(209, 209, 209);
+  text-decoration:none;
+}
+#n:hover{
+    background: #0f143d;
+    color:#ffffff;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+}
 
 /*--header--*/
 
@@ -32,6 +47,10 @@ header{
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 header{
   background: rgba(10, 52, 130, 0.98);
@@ -57,10 +76,7 @@ header{
   transition: .3s ease all;
   font-size: 18px;
 }
-.nav a.active,
-nav a:hover {
-  background: rgb(26, 95, 169);
-}
+
 
 .nav .contenedor{
   display: flex;
@@ -78,13 +94,15 @@ nav a:hover {
   font-size: 14px;
   outline: none;
 }
+
 /*--inicio--*/
-.inicio{
+.inicio img{
   max-width: 90%;
-  width: var (--ancho-contenedor);
   margin: 20px auto;
   overflow: hidden;
 }
+
+
 
 /*--footer--*/
 
@@ -94,7 +112,6 @@ footer {
   padding: 3em;
   left: 0;
   right: 0;
-
   margin-top: auto;
 }
 
@@ -110,18 +127,29 @@ footer a:hover, footer a:focus {
 
 
 /*----detalles----*/
-
+h2{
+  margin-top: 30px;
+}
 .card{
   padding: 70px;
   background: rgb(255, 255, 255);
   border-radius: 3px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+
 }
 .cards{
+  max-width: 70%;
+  margin: 20px auto;
+  overflow: hidden;
   padding: 70px;
+  margin: 60px auto;
   background: rgb(255, 255, 255);
   border-radius: 3px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 30px rgba(38, 38, 38, 0.3);
+}
+
+.cards .w{
+  width: 18rem;
 }
 
 /*----Formularios contacto----*/
@@ -167,10 +195,6 @@ textarea {
   text-align: center;
   line-height: 22px;
   transition: .3s ease all;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 .boton:hover{
