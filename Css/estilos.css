@@ -1,0 +1,136 @@
+
+:root{
+    --fuente: "Open Sans", sans-serif;
+    --fondo:#f2f2f2;
+    --ancho-contenedor: 1200px;
+}
+/*----general----*/
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background:var(--fondo);
+  color: #181818;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+/*--header--*/
+
+header{
+  height:90px;
+  padding:25px 0;
+  position:fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+header{
+  background: rgba(10, 52, 130, 0.98);
+  height: 50px;
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+.nav{
+  background: rgb(10, 52, 130);
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.nav a{
+  color: #ffffff;
+  text-decoration: none;
+  display: 	flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px 25px;
+  transition: .3s ease all;
+  font-size: 18px;
+}
+.nav a.active,
+nav a:hover {
+  background: rgb(26, 95, 169);
+}
+
+.nav .contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+.nav a {
+  padding: 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(223, 223, 223);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  outline: none;
+}
+/*--inicio--*/
+.inicio{
+  max-width: 90%;
+  width: var (--ancho-contenedor);
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+/*--footer--*/
+
+footer {
+  background: #181818;
+  color:#ffffff;
+  padding: 3em;
+  left: 0;
+  right: 0;
+
+  margin-top: auto;
+}
+
+footer a {
+  color: #999999;
+  text-decoration:none;
+}
+footer a:hover, footer a:focus {
+  color: rgb(209, 209, 209);
+  text-decoration:none;
+  border-bottom:1px dotted #999999;
+}
+
+
+/*----detalles----*/
+
+.card{
+  padding: 70px;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0px 0px 30px rgb(221,221,221,0.3);
+}
+
+/*----contacto----*/
+
+
+/*--helps--*/
+.no-margen { margin: 0 }
+.no-margen-superior { margin-top: 0 }
+.no-margen-inferior { margin-bottom: 0 }
+.no-margen-izquierdo { margin-left: 0 }
+.no-margen-derecho { margin-right: 0 }
+
+.margen-inferior {margin-bottom: 20px;}
+.margen-superior {margin-top: 20px;}
+
+.texto-centrado {text-align: center;}
+.texto-izquierda {text-align: left;}
+.texto-derecha {text-align: right;}
