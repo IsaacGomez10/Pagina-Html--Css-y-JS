@@ -10,31 +10,50 @@
     <title>Contacto</title>
 </head>
 <body>
-    <label for="">Nombre: </label>
-    <input type="text" required name="nombre" placeholder="Ingrese su nombre"><br>
+    <header>
+        <nav class="nav">
+        <div class="contenedor">
+        <a href="Index.html">Inicio</a>
+        <a href="Detalles.html">Top 5</a><br>
+        <a href="Contacto.html">Contacto</a><br>
+        </div>
+        </nav>
+    </header>
 
-    <label for="">Apellido: </label>
-    <input type="text" required name="apellido" placeholder="Ingrese su apellido"><br>
+    <div class="card contact-form col-4 col-10">
+    <form action="">
+        <h3>Contacto</h3>
+    <label for="">Nombre </label>
+    <input class="input" type="text" required name="nombre" placeholder="Ingrese su nombre"><br>
 
-    <label for="">Edad</label>
-    <input type="number" required name="edad" placeholder="Ingrese su edad"><br>
+    <label for="">Apellido </label>
+    <input class="input" type="text" required name="apellido" placeholder="Ingrese su apellido"><br>
 
-    <label for="">Ingresar documento</label>
-    <input type="file" name="holaVida"><br>
+    <label for="">Página </label>
+    <input class="input" type="text" required name="pagina" placeholder="Ingrese link de su pagina"><br>
 
-    <label for="">Mensaje</label><br>
-    <textarea name="mensaje" id="" cols="30" rows="10"></textarea><br>
+    <label for="">Ingresar documento </label>
+    <input class="input " type="file" name="holaVida"><br>
 
-    <label for="">Genero</label>
-    <select name="genero" required id="">
+    <label for="">Mensaje </label><br>
+    <textarea class="input" name="mensaje" id="" cols="30" rows="10"></textarea><br>
+
+    <label for="">Genero </label>
+    <select class="input" name="genero" required id="">
+        <option selected disabled>Seleccione una opción</option>
         <option value="1">Masculino</option>
         <option value="2">Femenino</option>
     </select><br>
 
-    <input type="submit" value="enviar"><br>
-    <a href="Index.html">Regresar al menu</a>
- 
-    
+    <input type="checkbox" id="term">
+    <label for="term">Leí y estoy de acuerdo con
+        <a href="">los terminos y condiciones.</a>
+    </label>
+
+    <input class="boton" type="submit" value="enviar"><br>
+    </form>
+    </div>  
+
     <footer class="texto-centrado">
         Pagina Isaac
         <div>
