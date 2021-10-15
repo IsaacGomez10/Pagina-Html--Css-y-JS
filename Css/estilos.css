@@ -73,7 +73,7 @@ nav a:hover {
   text-decoration: none;
   display: inline-block;
   color: rgba(223, 223, 223);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--fuente);
   font-weight: 600;
   font-size: 14px;
   outline: none;
