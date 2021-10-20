@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -8,11 +9,13 @@
     --fuente: "Open Sans", sans-serif;
     --fondo:#f2f2f2;
     --ancho-contenedor: 1200px;
+    --fuente-titulos:'Anton', sans-serif;
 }
 /*----general----*/
 html {
   height: 100%;
 }
+
 body {
   margin: 0;
   background:var(--fondo);
@@ -24,11 +27,14 @@ body {
   flex-direction: column;
 }
 
+.font{
+  font-family: var(--fuente-titulos);
+}
 /*--header--*/
 li, a, button{
 font-family: var(--fuente);
 font-weight: 500;
-font-size: 16px;
+font-size: 20px;
 color: #ffffff;
 text-decoration: none;
 }
@@ -78,7 +84,11 @@ button{
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-@media screen and (max-width:800px) {
+button:hover{
+  background: #3071e9;
+
+}
+@media screen and (max-width:910px) {
 
   .nav-links, .cont{
     display: none;
@@ -87,7 +97,12 @@ button{
   .menu{
     display: inherit;
   }
-  
+
+  .ab-img img{
+    margin: auto;
+    width: 800px;
+    height: 400px;
+  }
 }
 /*-dispositivos-*/
 
@@ -146,6 +161,7 @@ color: #2463b6;
     top: 15px;
     right: 35px;
   }
+
 }
 
 /*--inicio--*/
@@ -157,7 +173,15 @@ color: #2463b6;
 
 /*-about-*/
 .ab-img{
+  display: block;
 margin: 0 350px;
+}
+
+.ab-img img{
+  display: flex;
+  margin: 5px 5px;
+  width:1200px; 
+  height:675px;
 }
 
 /*--footer--*/
@@ -183,6 +207,9 @@ footer a:hover, footer a:focus {
 
 
 /*----detalles----*/
+h1{
+  font-family: var(--fuente-titulos);
+}
 h2{
   margin-top: 30px;
 }
@@ -247,6 +274,7 @@ textarea {
   color: #fff;
   display: inline-block;
   padding: 10px 15px ;
+  margin: 5px;
   border-radius: 10px;
   text-align: center;
   line-height: 22px;
@@ -255,6 +283,16 @@ textarea {
 
 .boton:hover{
   background: #147b18;
+}
+
+.termi a{
+  font-size: 16px;
+  color: #2463b6;
+  text-decoration:line;
+}
+
+.termi a:hover{
+  text-decoration: underline;
 }
 
 /*--helps--*/
