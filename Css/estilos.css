@@ -65,6 +65,10 @@ header{
   color: #bbbbbb;
 }
 
+.menu{
+  display: none;
+}
+
 button{
   padding: 9px 25px;
   background: #265cd0;
@@ -74,17 +78,73 @@ button{
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+@media screen and (max-width:800px) {
+
+  .nav-links, .cont{
+    display: none;
+  }
+
+  .menu{
+    display: inherit;
+  }
+  
+}
 /*-dispositivos-*/
-.nav-toggle{
-  color: #ffffff;
-  background: none;
-  border: none;
-  font-size: 30px;
-  pad: 0 20px;
-  line-height: 60px;
-  display: none;
+
+.overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: #434343;
+  overflow: hidden;
+  transition:all 0.3s ease 0s ;
 }
 
+.overlay-cont{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover, .overlay a:focus{
+  color: #ffffff;
+}
+
+.overlay .cerrar{
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height:450px) {
+  .overlay a{
+    font-size: 20px;
+  }
+
+  .overlay .cerrar {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 
 /*--inicio--*/
 .inicio img{
