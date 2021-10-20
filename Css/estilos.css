@@ -25,74 +25,66 @@ body {
 }
 
 /*--header--*/
+li, a, button{
+font-family: var(--fuente);
+font-weight: 500;
+font-size: 16px;
+color: #ffffff;
+text-decoration: none;
+}
 
 header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
   width: 100%;
-  overflow: hidden;
   background: rgb(6, 46, 119);
   margin-bottom: 20px;
   top: 0;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
   display: inline-block;
-  line-height: 100px;
+  padding: 0px 20px;
 }
 
-header .logo{
-  color: #d5d5d5;
-  font-size: 30px;
-  line-height: 100px;
-  text-decoration: none;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Anton', sans-serif;
+.nav-links li a{
+  transition: all 0.3s ease 0s;
 }
 
-header .logo:hover{
-color: #f2f2f2;
+.nav-links li a:hover{
+  color: #bbbbbb;
 }
 
-header nav{
-  float: right;
-}
-
-header nav .botones{
-  display: inline-block;
+button{
+  padding: 9px 25px;
+  background: #265cd0;
   color: #ffffff;
-  text-decoration: none;
-  padding: 10px 20px;
-  line-height: normal;
-  font-size: 15px;
-  font-weight: bold;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/*-dispositivos-*/
+.nav-toggle{
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 30px;
+  pad: 0 20px;
+  line-height: 60px;
+  display: none;
 }
 
-header nav .botones:hover{
-  background: #cac650;
-  border-radius: 10px;
-  color:rgb(0, 0, 0) ;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.ancho{
-  width: 90%;
-  max-width: 1000px;
-  margin:auto;
-  overflow:hidden;
-}
-@media screen and (max-width:950px)
-{
-  header .logo,
-  header nav{
-    width: 100%;
-    text-align: center;
-    line-height: 100px;
-  }
-}
 
 /*--inicio--*/
 .inicio img{
@@ -131,7 +123,7 @@ h2{
   padding: 70px;
   background: rgb(255, 255, 255);
   border-radius: 3px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 30px rgba(216, 216, 216, 0.3);
 
 }
 .cards{
@@ -142,7 +134,7 @@ h2{
   margin: 60px auto;
   background: rgb(255, 255, 255);
   border-radius: 3px;
-  box-shadow: 0px 0px 30px rgba(38, 38, 38, 0.3);
+  box-shadow: 0px 0px 30px rgba(211, 211, 211, 0.3);
 }
 
 .cards .w{
