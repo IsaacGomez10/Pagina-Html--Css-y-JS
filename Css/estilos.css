@@ -88,7 +88,7 @@ button:hover{
   background: #3071e9;
 
 }
-@media screen and (max-width:910px) {
+@media screen and (max-width:930px) {
 
   .nav-links, .cont{
     display: none;
@@ -96,12 +96,6 @@ button:hover{
 
   .menu{
     display: inherit;
-  }
-
-  .ab-img img{
-    margin: auto;
-    width: 800px;
-    height: 400px;
   }
 }
 /*-dispositivos-*/
@@ -178,12 +172,23 @@ margin: 0 350px;
 }
 
 .ab-img img{
-  display: flex;
-  margin: 5px 5px;
-  width:1200px; 
-  height:675px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:100%; 
+  height:100%;
 }
 
+@media screen and (max-width:930px) {
+
+
+  .ab-img img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+}
 /*--footer--*/
 
 footer {
@@ -233,6 +238,25 @@ h2{
 
 .cards .w{
   width: 18rem;
+}
+
+.imgs{
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:300px; 
+}
+
+
+@media screen and (max-width:930px) {
+
+  .imgs{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 /*----Formularios contacto----*/
@@ -308,6 +332,7 @@ textarea {
 .texto-centrado {text-align: center;}
 .texto-izquierda {text-align: left;}
 .texto-derecha {text-align: right;}
+.centrado{align-items: center;}
 
 .ancho{
   width: 90%;
