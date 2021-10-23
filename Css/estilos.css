@@ -1,15 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,500;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root{
-    --fuente: "Open Sans", sans-serif;
-    --fondo:#f2f2f2;
-    --ancho-contenedor: 1200px;
-    --fuente-titulos:'Anton', sans-serif;
 }
 /*----general----*/
 html {
@@ -18,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  background:var(--fondo);
+  background:rgb(226, 226, 226);
   color: #181818;
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -28,15 +21,16 @@ body {
 }
 
 .font{
-  font-family: var(--fuente-titulos);
+  font-family: 'Anton', sans-serif;
 }
 /*--header--*/
-li, a, button{
-font-family: var(--fuente);
+li,a, button{
+font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 20px;
 color: #ffffff;
 text-decoration: none;
+
 }
 
 header{
@@ -45,7 +39,7 @@ header{
   align-items: center;
   padding: 30px 10%;
   width: 100%;
-  background: rgb(6, 46, 119);
+  background: rgb(230, 178, 9);
   margin-bottom: 20px;
   top: 0;
 }
@@ -68,16 +62,21 @@ header{
 }
 
 .nav-links li a:hover{
-  color: #bbbbbb;
-}
+  color: #6d4802;
+  box-shadow:0px 4px rgb(112, 73, 0);
 
+}
+.nav-links li a:active{
+  color: #fff;
+  box-shadow:none;
+}
 .menu{
   display: none;
 }
 
 button{
   padding: 9px 25px;
-  background: #265cd0;
+  background: #a27004;
   color: #ffffff;
   border: none;
   border-radius: 50px;
@@ -85,7 +84,8 @@ button{
   transition: all 0.3s ease 0s;
 }
 button:hover{
-  background: #3071e9;
+  background: #ffcc00;
+  color: #6d4802;
 
 }
 @media screen and (max-width:930px) {
@@ -98,6 +98,8 @@ button:hover{
     display: inherit;
   }
 }
+
+
 /*-dispositivos-*/
 
 .overlay{
@@ -107,7 +109,7 @@ button:hover{
   z-index: 1;
   left: 0;
   top: 0;
-  background: #434343;
+  background: #1f1f1f;
   overflow: hidden;
   transition:all 0.3s ease 0s ;
 }
@@ -125,13 +127,9 @@ button:hover{
   font-size: 36px;
   display: block;
   transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
 }
 
-.overlay a:hover, .overlay a:focus{
+.overlay .botones:hover, .overlay .botones:focus{
   color: #ffffff;
 }
 
@@ -142,9 +140,18 @@ button:hover{
   right: 45px;
   font-size: 60px;
 }
-.overlay-cont a:hover{
-color: #2463b6;
+.overlay-cont .botones:hover{
+color: #fcc100;
 }
+
+.bt{
+  color:#ffffff;
+}
+
+.bt:hover{
+  color:#e2843d;
+}
+
 @media screen and (max-height:450px) {
   .overlay a{
     font-size: 20px;
@@ -157,7 +164,9 @@ color: #2463b6;
   }
 
 }
-
+.overlay .cerrar:hover{
+  color: rgb(226, 22, 22);
+}
 /*--inicio--*/
 .inicio img{
   max-width: 90%;
@@ -168,19 +177,18 @@ color: #2463b6;
 /*-about-*/
 .ab-img{
   display: block;
-margin: 0 350px;
+  margin: 5px 20px;
 }
 
 .ab-img img{
+  display: block;
   margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
-  width:100%; 
-  height:100%;
+  width:50%; 
 }
 
 @media screen and (max-width:930px) {
-
 
   .ab-img img{
     background-size: contain;
@@ -189,6 +197,7 @@ margin: 0 350px;
     height: 100%;
   }
 }
+
 /*--footer--*/
 
 footer {
@@ -213,27 +222,10 @@ footer a:hover, footer a:focus {
 
 /*----detalles----*/
 h1{
-  font-family: var(--fuente-titulos);
+  font-family: 'Anton', sans-serif;
 }
 h2{
   margin-top: 30px;
-}
-.card{
-  padding: 70px;
-  background: rgb(255, 255, 255);
-  border-radius: 3px;
-  box-shadow: 0px 0px 30px rgba(216, 216, 216, 0.3);
-
-}
-.cards{
-  max-width: 70%;
-  margin: 20px auto;
-  overflow: hidden;
-  padding: 70px;
-  margin: 60px auto;
-  background: rgb(255, 255, 255);
-  border-radius: 3px;
-  box-shadow: 0px 0px 30px rgba(211, 211, 211, 0.3);
 }
 
 .cards .w{
@@ -271,7 +263,7 @@ h2{
   padding-left: 30px; 
 }
 form *{
-  font-family: var(--fuente);
+  font-family: "Open Sans", sans-serif;
 }
 
 form .input{
@@ -284,7 +276,7 @@ form .input{
 }
 
 form .input:focus{
-  border: 1px solid#55d849;
+  border: 1px solid#1c78da;
   outline: none;
 }
 textarea {
@@ -298,25 +290,91 @@ textarea {
   color: #fff;
   display: inline-block;
   padding: 10px 15px ;
-  margin: 5px;
-  border-radius: 10px;
+  margin: 20px 170px;
+  border-radius: 50px;
   text-align: center;
   line-height: 22px;
   transition: .3s ease all;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .boton:hover{
   background: #147b18;
 }
 
-.termi a{
+.termi .cond{
   font-size: 16px;
   color: #2463b6;
-  text-decoration:line;
+  text-decoration:underline;
+}
+@media screen and (max-width:930px) {
+  .boton{
+    margin: 20px 140px;
+  }
 }
 
-.termi a:hover{
-  text-decoration: underline;
+/*-----cards-----*/
+.card{
+  width: 600px;
+  padding: 70px;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0px 0px 30px rgba(216, 216, 216, 0.3);
+}
+.card-contenedor{
+  font-size: 16px;
+  width: 600px;
+  margin: 30px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 (rgb 0,0,0,0.1);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.card-contenedor .card-header{
+display: block;
+align-items: center;
+gap: 10px;
+padding: 20px;
+}
+
+.card-contenedor .card-header h3{
+display: block;
+}
+
+.card-contenedor .card-cont .card-text{
+  padding: 10px;
+}
+
+.card-contenedor .card-cont .card-text p{ 
+  display: block;
+}
+
+.card-contenedor .card-cont .card-img img{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 400px;
+}
+
+@media screen and (max-width:930px) {
+  .card{
+    width: 500px;
+  }
+  .card-contenedor{
+    width: 400px;
+  }
+  
+  .card-contenedor .card-cont .card-img img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+  }
+
 }
 
 /*--helps--*/
