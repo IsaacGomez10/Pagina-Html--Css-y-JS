@@ -24,26 +24,34 @@ body {
   font-family: 'Anton', sans-serif;
 }
 /*--header--*/
-li,a, button{
+li, button{
 font-family: 'Roboto', sans-serif;
-font-weight: 500;
+font-weight: 400;
 font-size: 20px;
 color: #ffffff;
 text-decoration: none;
+}
 
+.botones{
+  font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    text-decoration:none;
+    display: inline-block;
+    color: #ffffff;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 20px;
 }
 
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 0 30px;
   width: 100%;
   background: rgb(230, 178, 9);
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   top: 0;
 }
-
 .logo{
   cursor: pointer;
 }
@@ -59,11 +67,12 @@ header{
 
 .nav-links li a{
   transition: all 0.3s ease 0s;
+
 }
 
 .nav-links li a:hover{
   color: #6d4802;
-  box-shadow:0px 4px rgb(112, 73, 0);
+  box-shadow:0 4px rgb(112, 73, 0);
 
 }
 .nav-links li a:active{
@@ -72,6 +81,11 @@ header{
 }
 .menu{
   display: none;
+  background: none;
+  font-size: 35px;
+}
+.menu:hover{
+  background: none;
 }
 
 button{
@@ -88,7 +102,7 @@ button:hover{
   color: #6d4802;
 
 }
-@media screen and (max-width:930px) {
+@media screen and (max-width:1200px) {
 
   .nav-links, .cont{
     display: none;
@@ -136,6 +150,8 @@ button:hover{
 .overlay .cerrar{
   cursor: pointer;
   position: absolute;
+  text-decoration: none;
+  color: #ffffff;
   top: 20px;
   right: 45px;
   font-size: 60px;
@@ -165,7 +181,7 @@ color: #fcc100;
 
 }
 .overlay .cerrar:hover{
-  color: rgb(226, 22, 22);
+  color: rgb(240, 83, 83);
 }
 /*--inicio--*/
 .inicio img{
@@ -188,7 +204,7 @@ color: #fcc100;
   width:50%; 
 }
 
-@media screen and (max-width:930px) {
+@media screen and (max-width:1200px) {
 
   .ab-img img{
     background-size: contain;
@@ -201,12 +217,11 @@ color: #fcc100;
 /*--footer--*/
 
 footer {
+  display: flex;
   background: #181818;
   color:#ffffff;
-  padding: 3em;
-  left: 0;
-  right: 0;
   margin-top: auto;
+  top: 0;
 }
 
 footer a {
@@ -324,6 +339,7 @@ textarea {
   border-radius: 3px;
   box-shadow: 0px 0px 30px rgba(216, 216, 216, 0.3);
 }
+
 .card-contenedor{
   font-size: 16px;
   width: 600px;

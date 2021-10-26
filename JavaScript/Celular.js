@@ -1,5 +1,6 @@
 function openNav(){
-    document.getElementById("celular").style.width = "100%";
+    document.getElementById("celular").style.width = "90%";
+
 }
 
 function closeNav(){
