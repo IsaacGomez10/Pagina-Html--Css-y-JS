@@ -8,6 +8,7 @@
 /*----general----*/
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 li ,a, button{
   font-family: 'Roboto', sans-serif;
@@ -351,7 +352,7 @@ textarea {
 .card-contenedor{
   font-size: 16px;
   width: 600px;
-  margin: 30px auto;
+  margin: 200px auto;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 (rgb 0,0,0,0.1);
   background: #ffffff;
@@ -386,8 +387,8 @@ display: block;
 
 .card-contene{
   font-size: 16px;
-  width: 700px;
-  margin: 30px auto;
+  width: 600px;
+  margin: 20px auto;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 (rgb 0,0,0,0.1);
   background: #ffffff;
@@ -397,8 +398,8 @@ display: block;
 .card-contene .card-cont{
   background-size: contain;
   background-repeat: no-repeat;
-  width: 600px;
-  height: 400px;
+  width: 500px;
+  height: 350px;
 }
 
 @media screen and (max-width:930px) {
@@ -420,12 +421,82 @@ display: block;
 
 /*--Funciones--*/
 
-button .cont{
-  display: block;
 
-
+.fun{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #181818;
+  display: inline-block;
+  padding: 5px 10px ;
+  margin: 3px 3px;
+  text-align: center;
+  line-height: 22px;
+  transition: .3s ease all;
+  box-shadow:0 4px rgb(112, 73, 0);
 }
 
+.fun:hover{
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  color: #181818;
+  box-shadow:0 6px rgb(112, 73, 0);
+}
+
+/*-top 5-*/
+
+a {
+	text-decoration: none;
+}
+
+nav{
+	background: rgb(230, 178, 9);
+	height: 80px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+nav .lk {
+	flex: 1;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #000;
+	transition: .2s ease-in-out all;
+	font-weight: 500;
+}
+
+nav .lk:hover {
+	background: #f0f0f0;
+}
+
+nav .indicador {
+	width: 0px;
+	height: 7px;
+	background: #113cfc;
+	position: absolute;
+	bottom: 0;
+	transition: .3s ease-out all;
+	/* transform: translate(-500px); */
+}
+
+@media screen and (max-width: 800px) {
+	nav a {
+		font-size: 14px;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	nav a {
+		font-size: 12px;
+	}
+}
 /*--helps--*/
 .no-margen { margin: 0 }
 .no-margen-superior { margin-top: 0 }

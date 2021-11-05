@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/estilos.css">
     <title>Funciones</title>
 </head>
+
 <body>
     <header>
         <a href="Index.html"><img class="logo" src="Imagenes/Icono.png" alt="logo" width="250px"></a>
         <nav>
-           <ul class="link nav-links">
+            <ul class="link nav-links">
                 <li><a class="botones" href="Index.html">Inicio</a></li>
                 <li><a class="botones" href="Detalles.html">Top 5</a></li>
                 <li><a class="botones" href="About.html">Acerca de</a></li>
                 <li><a class="botones" href="Funciones.html">Funciones</a></li>
                 <a class="cont" href="Contacto.html"><button>Contacto</button></a>
-           </ul>
+            </ul>
         </nav>
         <button onclick="openNav()" class="menu"><i class="bi bi-list"></i></button>
     </header>
@@ -37,6 +42,7 @@
         </div>
     </div>
 
+    <!--modificar palabras-->
     <div class="contenedor ">
         <div class="card-contene">
             <div class="card-header texto-centrado">
@@ -44,26 +50,49 @@
             </div>
             <div class="card-cont texto-centrado contact-form">
 
-                <label for="" id="vista"></label>
-                <input class="input" type="text" value="" id="palabra" placeholder="Ingrese una palabra"><br>
-                <input class="fun" type="button" id="boton" onclick="convertir(1)" value="Magnitud"/>
-                <input class="fun" type="button" id="boton2" onclick="convertir(2)" value="Mayúsculas"/>
-                <input class="fun" type="button" id="boton3" onclick="convertir(3)" value="Minúsculas"/>
-                <input class="fun" type="button" id="boton4" onclick="convertir(4)" value="Primer Caracter"/>
                 
+            <p><span id="vista"></span></p>
+                <form method="post" id="formularios">
+                    <input class="input" type="text" value="" id="palabra" placeholder="Ingrese una palabra"><br>
+                </form>
+                <input class="fun" type="button" onclick="convertir(1)" value="Magnitud" />
+                <input class="fun" type="button" onclick="convertir(2)" value="Mayúsculas" />
+                <input class="fun" type="button" onclick="convertir(3)" value="Minúsculas" />
+                <input class="fun" type="button" onclick="convertir(4)" value="Primer Caracter" />
+                
+
             </div>
         </div>
     </div>
 
+    <!--Calculadora básica-->
     <div class="contenedor ">
         <div class="card-contene">
             <div class="card-header texto-centrado">
                 <h3 class="pleaceholder">Calculadora Basica</h3>
             </div>
-            <div class="card-cont texto-centrado contact-form">
-
-                <input class="input" type="number" value="" id="numero" placeholder="Ingrese un número"><br>
-                <input class="input" type="number" value="" id="numero" placeholder="Ingrese una número"><br>
+            <div class="card-cont contact-form">
+                <form method="post" id="formulario">
+                    <label for="">Número 1 </label>
+                    <input class="input" type="number" value="" id="numero1" placeholder="Ingrese un número"><br>
+                    <label for="">Número 2 </label>
+                    <input class="input" type="number" value="" id="numero2" placeholder="Ingrese un número"><br>
+                    
+                    <p><span id="vista2"></span></p>
+                <label for="">Operador </label>
+                
+                    <select class="input" required id="operacion">
+                        <option selected disabled>Seleccione un operador</option>
+                        <option value="1">Suma</option>
+                        <option value="2">Resta</option>
+                        <option value="3">Multiplicación</option>
+                        <option value="4">Divición</option>
+                    </select>
+                </form>
+                
+                <input class="fun" type="button" id="boton5" onclick="resultado()" value=" = " />
+                <input class="fun" type="button" id="boton6" onclick="limpiar()" value="Limpiar" />
+                
             </div>
         </div>
     </div>
@@ -77,4 +106,5 @@
     <script type="text/javascript" src="JavaScript/Funciones.js"></script>
 
 </body>
+
 </html>
