@@ -6,6 +6,7 @@ function openNav(){
 function closeNav(){
     document.getElementById("celular").style.width = "0";
 }
+
 /* -----datos para arreglar -------
 async function requestInfo(){
     console.log("Cargando Infirmación...");
