@@ -3,12 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 /*----general----*/
 html {
   height: 100%;
 }
-
+li ,a, button{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  }
+  
 body {
   margin: 0;
   background:rgb(226, 226, 226);
@@ -23,14 +31,8 @@ body {
 .font{
   font-family: 'Anton', sans-serif;
 }
+
 /*--header--*/
-li, button{
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-font-size: 20px;
-color: #ffffff;
-text-decoration: none;
-}
 
 .botones{
   font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +40,7 @@ text-decoration: none;
     text-decoration:none;
     display: inline-block;
     color: #ffffff;
-    margin: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0;
     padding: 10px 20px;
 }
 
@@ -67,7 +69,11 @@ header{
 
 .nav-links li a{
   transition: all 0.3s ease 0s;
-
+  padding: 0 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
 }
 
 .nav-links li a:hover{
@@ -83,6 +89,7 @@ header{
   display: none;
   background: none;
   font-size: 35px;
+  text-decoration: none;
 }
 .menu:hover{
   background: none;
@@ -94,7 +101,6 @@ button{
   color: #ffffff;
   border: none;
   border-radius: 50px;
-  cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 button:hover{
@@ -162,10 +168,12 @@ color: #fcc100;
 
 .bt{
   color:#ffffff;
+  text-decoration: none;
 }
 
 .bt:hover{
   color:#e2843d;
+  text-decoration: none;
 }
 
 @media screen and (max-height:450px) {
