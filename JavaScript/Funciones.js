@@ -1,12 +1,15 @@
-/*-responsive-*/
-function openNav() {
-    document.getElementById("celular").style.width = "90%";
+/*-header responsive-*/
 
-}
+const botonMenu = document.querySelector(".boton-menu");
+const menu = document.querySelector(".menu");
 
-function closeNav() {
-    document.getElementById("celular").style.width = "0";
-}
+botonMenu.addEventListener("click",() => {
+    botonMenu.classList.toggle("active");
+    menu.classList.toggle("active");
+});
+
+
+
 /*-modificar palabra-*/
 function convertir(tipo) {
 
@@ -21,9 +24,8 @@ function convertir(tipo) {
     } else if (tipo == 3) {
         palabra.value = texto.toLowerCase();
     } else if (tipo = 4) {
-        palabra.value = texto.slice(1, 1);
-        vista = document.getElementById("vista").innerHTML = ("Primer caracter es " + palabra.value);
-
+        palabra.value = (texto[0]);
+        document.getElementById("vista").innerHTML = ("Primer caracter es: " + palabra.value);
     }
 
 }

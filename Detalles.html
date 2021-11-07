@@ -13,29 +13,18 @@
 </head>
 <body>
     <header>
-        <a href="Index.html"><img class="logo" src="Imagenes/Icono.png" alt="logo"></a>
-        <nav>
-           <ul class="nav-links">
-                <li><a class="botones" href="Index.html">Inicio</a></li>
-                <li><a class="botones" href="Detalles.html">Top 5</a></li>
-                <li><a class="botones" href="About.html">Acerca de</a></li>
-                <li><a class="botones" href="Funciones.html">Funciones</a></li>
-                <a class="cont" href="Contacto.html"><button>Contacto</button></a>
-           </ul>
-        </nav>
-        <button onclick="openNav()" class="menu"><i class="bi bi-list"></i></button>
-    </header>
-
-    <div id="celular" class="overlay">
-        <a class="cerrar" onclick="closeNav()">&times;</a>
-        <div class="overlay-cont">
-            <a class="botones" href="Index.html">Inicio</a>
-            <a class="botones" href="Detalles.html">Top 5</a>
-            <a class="botones" href="About.html">Acerca de</a>
-            <a class="botones" href="Funciones.html">Funciones</a>
-            <a class="bt" href="Contacto.html">Contacto</a>
+        <a href="Index.html"><img class="menu-logo" src="Imagenes/Icono.png" alt="logo" width="180px"></a>
+        <div class="boton-menu"></div>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="Index.html">Inicio</a>
+                <a href="About.html">Acerca de</a>
+                <a href="Detalles.html">Detalles</a>
+                <a href="Funciones.html">Funciones</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
         </div>
-    </div>
+    </header>
     
     <nav id="list">
         <a class="lk" href="#1">Numero 1</a>
@@ -45,7 +34,7 @@
         <a class="lk" href="#5">Numero 5</a>
         <span class="indicador" id="indicador"></span>
     </nav>
-
+<section>
     <h1 class="texto-centrado"><span>Top 5 animales más épicos de la historia</span></h1>
 
     <div class="contenedor" id="1">
@@ -140,7 +129,7 @@
         </div>
 
     </div>
-
+</section>
     <footer class="texto-centrado">
         <div>
             <img class="logo" src="Imagenes/Icono.png" alt="logo" width="250px">
