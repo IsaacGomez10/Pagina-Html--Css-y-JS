@@ -11,12 +11,6 @@ html {
   height: 100%;
   scroll-behavior: smooth;
 }
-li ,a, button{
-  font-weight: 500;
-  font-size: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  }
   
 body {
   margin: 0;
@@ -51,7 +45,7 @@ header .menu{
 
 header .menu .menu-item a{
   position: relative;
-  color: #181818;
+  color: #ffffff;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
@@ -63,7 +57,7 @@ header .menu .menu-item a{
 header .menu .menu-item a::before{
   content: '';
   position: absolute;
-  background: #181818;
+  background: #995d03;
   width: 0;
   height: 3px;
   bottom: 0;
@@ -114,15 +108,37 @@ section{
   margin-bottom: 65px;
 }
 
-.home .contenido a{
-  background: #ffffff;
-  padding: 15px 35px;
-  color: #181818;
-  font-size: 1.1em;
+.bot{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80px;
+  background: #161616;
+  color: #ffffff;
+  font-family: 'Arial',sans-serif;
+  font-size: 20px;
   font-weight: 500;
-  text-decoration: none;
-  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 5px;
 }
+ .bot::before{
+  content: '';
+  position: absolute;
+  background: #995d03;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+ }
+
+ .bot:hover:before{
+  width: 100%;
+ }
 
 @media (max-width: 1200px){
   header{
