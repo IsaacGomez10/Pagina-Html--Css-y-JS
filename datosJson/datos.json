@@ -1,0 +1,146 @@
+[
+        {
+                "nombre": "Lisa",
+                "edad": 10,
+                "familiar": [
+                        "Homer",
+                        " Marge"
+                ],
+                "cabello": "blond",
+                "comprobado": true,
+                "icono": "simpsonsIcons lisa"
+        },
+        {
+                "nombre": "Bart",
+                "edad": 9,
+                "familiar": [
+                        "Homer",
+                        " Marge"
+                ],
+                "cabello": "blond",
+                "comprobado": false,
+                "icono": "simpsonsIcons bart"
+        },
+        {
+                "nombre": "Maggie",
+                "edad": 2,
+                "familiar": [
+                        "Homer",
+                        " Marge"
+                ],
+                "cabello": "black",
+                "comprobado": true
+        },
+        {
+                "nombre": "Patty",
+                "edad": 37,
+                "familiar": [
+                        "Jacqueline"
+                ],
+                "cabello": "blond",
+                "comprobado": true
+        },
+        {
+                "nombre": "Selma",
+                "edad": 38,
+                "familiar": [
+                        "Jacqueline"
+                ],
+                "cabello": "blond",
+                "comprobado": false
+        },
+        {
+                "nombre": "Rod",
+                "edad": 9,
+                "familiar": [
+                        "Ned"
+                ],
+                "cabello": "blond",
+                "comprobado": true
+        },
+        {
+                "nombre": "Todd",
+                "edad": 8,
+                "familiar": [
+                        "Ned"
+                ],
+                "cabello": "blond",
+                "comprobado": true
+        },
+        {
+                "nombre": "Abe",
+                "edad": 65,
+                "familiar": [
+                        "Root"
+                ],
+                "cabello": "none",
+                "comprobado": true
+        },
+        {
+                "nombre": "Mona",
+                "edad": 65,
+                "familiar": [
+                        "Root"
+                ],
+                "cabello": "none",
+                "comprobado": false
+        },
+        {
+                "nombre": "Jacqueline",
+                "edad": 63,
+                "familiar": [
+                        "Root"
+                ],
+                "cabello": "none",
+                "comprobado": true
+        },
+        {
+                "nombre": "Homer",
+                "edad": 42,
+                "familiar": [
+                        "Abe",
+                        "Mona"
+                ],
+                "cabello": "none",
+                "comprobado": false,
+                "icono": "simpsonsIcons homer",
+                "enabled": false
+        },
+        {
+                "nombre": "Marge",
+                "edad": 35,
+                "familiar": [
+                        "Jacqueline"
+                ],
+                "cabello": "blond",
+                "comprobado": true,
+                "icono": "simpsonsIcons marge"
+        },
+        {
+                "nombre": "Ned",
+                "edad": 40,
+                "familiar": [
+                        "Root"
+                ],
+                "cabello": "none",
+                "comprobado": true
+        },
+        {
+                "nombre": "Apu",
+                "edad": 40,
+                "familiar": [
+                        "Root"
+                ],
+                "cabello": "black",
+                "comprobado": true
+        },
+        {
+                "nombre": "Manjula",
+                "edad": 40,
+                "familiar": [
+                        "Apu"
+                ],
+                "cabello": "brown",
+                "comprobado": false
+        }
+]

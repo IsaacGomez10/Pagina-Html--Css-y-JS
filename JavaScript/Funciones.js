@@ -3,7 +3,7 @@
 const botonMenu = document.querySelector(".boton-menu");
 const menu = document.querySelector(".menu");
 
-botonMenu.addEventListener("click",() => {
+botonMenu.addEventListener("click", () => {
     botonMenu.classList.toggle("active");
     menu.classList.toggle("active");
 });
@@ -65,3 +65,6 @@ function resultado() {
     }
 
 }
+
+
+
