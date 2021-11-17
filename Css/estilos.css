@@ -588,6 +588,44 @@ nav .indicador {
 		font-size: 12px;
 	}
 }
+
+.carta{
+    width: 900px;
+    height: 700px;
+    padding: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px rgba(216, 216, 216, 0.3);
+}
+/*-Grid-*/
+.grid{
+  position: relative;
+  width: 100%;
+  /*-*/
+  /*-*/
+}
+
+.grid .imagenes-cargadas{
+  opacity: 1;
+}
+.grid .obj{
+  position: absolute;
+  display: block;
+  padding: 20;
+  margin: 10px;
+  width: calc(33.333% - 20px);
+}
+
+.grid .obj-contenido{
+  position: relative;
+}
+
+.grid .obj img{
+  width: 100%;
+  cursor: pointer;
+  vertical-align: top;
+}
+
 /*--helps--*/
 .no-margen { margin: 0 }
 .no-margen-superior { margin-top: 0 }

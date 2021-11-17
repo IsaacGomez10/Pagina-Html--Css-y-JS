@@ -3,33 +3,36 @@
                 "nombre": "Lisa",
                 "edad": 10,
                 "familiar": [
-                        "Homer",
+                        "Homero",
                         " Marge"
                 ],
-                "cabello": "blond",
+                "cabello": "Rubio",
                 "comprobado": true,
-                "icono": "simpsonsIcons lisa"
+                "icono": "simpsonsIcons lisa",
+                "imagen":"4.png"
         },
         {
                 "nombre": "Bart",
                 "edad": 9,
                 "familiar": [
-                        "Homer",
+                        "Homero",
                         " Marge"
                 ],
-                "cabello": "blond",
+                "cabello": "Rubio",
                 "comprobado": false,
-                "icono": "simpsonsIcons bart"
+                "icono": "simpsonsIcons bart",
+                "imagen":"1.png"
         },
         {
                 "nombre": "Maggie",
                 "edad": 2,
                 "familiar": [
-                        "Homer",
+                        "Homero",
                         " Marge"
                 ],
-                "cabello": "black",
-                "comprobado": true
+                "cabello": "Rubio",
+                "comprobado": true,
+                "imagen":"5.png"
         },
         {
                 "nombre": "Patty",
@@ -37,8 +40,9 @@
                 "familiar": [
                         "Jacqueline"
                 ],
-                "cabello": "blond",
-                "comprobado": true
+                "cabello": "Gris",
+                "comprobado": true,
+                "imagen":"10.png"
         },
         {
                 "nombre": "Selma",
@@ -46,8 +50,9 @@
                 "familiar": [
                         "Jacqueline"
                 ],
-                "cabello": "blond",
-                "comprobado": false
+                "cabello": "Gris",
+                "comprobado": false,
+                "imagen":"12.png"
         },
         {
                 "nombre": "Rod",
@@ -55,8 +60,9 @@
                 "familiar": [
                         "Ned"
                 ],
-                "cabello": "blond",
-                "comprobado": true
+                "cabello": "Cafe",
+                "comprobado": true,
+                "imagen":"11.png"
         },
         {
                 "nombre": "Todd",
@@ -64,8 +70,9 @@
                 "familiar": [
                         "Ned"
                 ],
-                "cabello": "blond",
-                "comprobado": true
+                "cabello": "Cafe",
+                "comprobado": true,
+                "imagen":"13.png"
         },
         {
                 "nombre": "Abe",
@@ -74,7 +81,8 @@
                         "Root"
                 ],
                 "cabello": "none",
-                "comprobado": true
+                "comprobado": true,
+                "imagen":"14.png"
         },
         {
                 "nombre": "Mona",
@@ -83,7 +91,8 @@
                         "Root"
                 ],
                 "cabello": "none",
-                "comprobado": false
+                "comprobado": false,
+                "imagen":"8.png"
         },
         {
                 "nombre": "Jacqueline",
@@ -92,19 +101,21 @@
                         "Root"
                 ],
                 "cabello": "none",
-                "comprobado": true
+                "comprobado": true,
+                "imagen":"3.png"
         },
         {
-                "nombre": "Homer",
+                "nombre": "Homero",
                 "edad": 42,
                 "familiar": [
                         "Abe",
-                        "Mona"
+                        " Mona"
                 ],
                 "cabello": "none",
                 "comprobado": false,
                 "icono": "simpsonsIcons homer",
-                "enabled": false
+                "enabled": false,
+                "imagen":"2.png"
         },
         {
                 "nombre": "Marge",
@@ -112,9 +123,10 @@
                 "familiar": [
                         "Jacqueline"
                 ],
-                "cabello": "blond",
+                "cabello": "Azul",
                 "comprobado": true,
-                "icono": "simpsonsIcons marge"
+                "icono": "simpsonsIcons marge",
+                "imagen":"7.png"
         },
         {
                 "nombre": "Ned",
@@ -123,7 +135,8 @@
                         "Root"
                 ],
                 "cabello": "none",
-                "comprobado": true
+                "comprobado": true,
+                "imagen":"9.png"
         },
         {
                 "nombre": "Apu",
@@ -131,8 +144,9 @@
                 "familiar": [
                         "Root"
                 ],
-                "cabello": "black",
-                "comprobado": true
+                "cabello": "Negro",
+                "comprobado": true,
+                "imagen":"15.png"
         },
         {
                 "nombre": "Manjula",
@@ -140,7 +154,8 @@
                 "familiar": [
                         "Apu"
                 ],
-                "cabello": "brown",
-                "comprobado": false
+                "cabello": "Marron",
+                "comprobado": false,
+                "imagen":"6.png"
         }
 ]

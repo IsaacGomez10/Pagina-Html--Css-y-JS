@@ -34,37 +34,48 @@
     </header>
 
     <section>
-        <h1 class="texto-centrado">Busca aquí tu personaje de los Simpsons</h1>
-        <form class="card contact-form col-4 col-10">
-            <input class="input texto-centrado" type="text" id="personaje" value=""
-                placeholder="Buscar Personaje" /><br>
         </form>
         <div class="personaje-contenedor mt-4"></div>
-        <button class="btn btn-primary mt-2" id="encontrar">Buscar</button>
-        <table class="table table-dark table-hover">
+        <table class="table table-dark table-hover" id="encontrar">
+
+            <h1 class="texto-centrado">Información de Personajes</h1>
             <thead>
                 <tr>
                     <th>Nombre</th>
                     <th>Edad</th>
-                    <th>Familiar</th>
                     <th>Cabello</th>
-                    <th>Comprobado</th>
                 </tr>
-                <tbody id="res">
+            <tbody id="res">
 
-                </tbody>
+            </tbody>
+            </thead>
+        </table>
+
+        <table class="table table-dark table-hover">
+            <h1 class="texto-centrado">Familiares de Personaje</h1>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Familiares</th>
+                </tr>
+            <tbody id="res2">
+
+            </tbody>
             </thead>
         </table>
     </section>
 
-
-    <footer>
-        <div>
-            <img class="logo" src="Imagenes/Icono.png" alt="logo" width="250px">
-            <a target="_Blank" href="https://github.com/IsaacGomez10"><i class="bi-github"> Github</i></a>
+    <div class="carta">
+        <h1>Busca aquí tu personaje de los Simpsons</h1>
+        <input type="text" class="texto-centrado" placeholder="Buscar" name="" id="personaje">
+        <button onclick="buscar()">Buscar</button>
+        <div id="mostrar">
+            
         </div>
-    </footer>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
     <script src="datosJson/personajes.js"></script>
 </body>
 
